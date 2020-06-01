@@ -25,7 +25,10 @@
               {{ form.bio }}
               {{ form.link }}
               <input type="email" value="{{request.user.email}}" class="form-control mt-3" readonly>
-              <p class="mt-3">Sí Deseas Editar tu Correo Electrónico, Haz Clic <a href="{% url 'profile_email' %}">Aquí</a></p>
+              <p class="mt-3">
+                  Sí Deseas Editar tu Correo Electrónico, Haz Clic <a href="{% url 'profile_email' %}">Aquí</a>.<br>
+                  y Sí Deseas Cambiar tu Contraseña, Haz Clic <a href="{% url 'password_change' %}">Aquí</a>.<br>
+              </p>
               <input type="submit" class="btn btn-primary btn-block mt-3" value="Actualizar">
             </div>
           </div>
